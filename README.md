@@ -6,7 +6,6 @@ A comprehensive data lake implementation using AWS S3, Glue, and Athena. This pr
 ---
 
 ## Architecture
-![Architecture](docs/architecture.png)
 
 The architecture consists of:
 - **Multi-layer storage** in S3 (raw, processed, analytics zones)  
