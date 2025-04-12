@@ -3,54 +3,48 @@
 ## Project Overview
 A comprehensive data lake implementation using AWS S3, Glue, and Athena. This project demonstrates a modern, scalable approach to storing, cataloging, and analyzing diverse datasets using cloud-native services.
 
----
+## Table of Contents
+- [Architecture](#architecture)
+- [Features](#features)
+- [Technical Stack](#technical-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Monitoring](#monitoring)
+- [Troubleshooting](#troubleshooting)
 
 ## Architecture
+![Data Lake Architecture](architecture.png)
 
-The architecture consists of:
-- **Multi-layer storage** in S3 (raw, processed, analytics zones)  
-- **Automated metadata cataloging** with AWS Glue  
-- **Serverless querying** via Amazon Athena  
-- **Event-driven processing** using Lambda and Step Functions  
-- **Comprehensive monitoring** with CloudWatch  
-
----
+### Components
+- **Storage Layer**: S3 buckets organized in zones (raw, processed, analytics)
+- **Processing Layer**: AWS Glue ETL jobs and Lambda functions
+- **Query Layer**: Amazon Athena for SQL analytics
+- **Catalog Layer**: AWS Glue Data Catalog
+- **Security Layer**: IAM roles and bucket policies
 
 ## Features
-✅ Scalable data ingestion framework  
-✅ Automated schema discovery and evolution  
-✅ Efficient data partitioning for performance optimization  
-✅ SQL-based analytics on diverse datasets  
-✅ Data governance and access controls  
-✅ Cost-efficient storage and processing  
-
----
+- 🔄 Automated data ingestion pipeline
+- 📊 Schema evolution management
+- 📈 Performance-optimized partitioning
+- 🔍 SQL-based analytics capabilities
+- 🔐 Comprehensive security controls
+- 💰 Cost-optimization features
 
 ## Technical Stack
-| Component               | Technology           |
-|-------------------------|---------------------|
-| **Storage**             | Amazon S3           |
-| **Compute**             | AWS Lambda, AWS Glue |
-| **Cataloging**          | AWS Glue Data Catalog |
-| **Query Engine**        | Amazon Athena        |
-| **Orchestration**       | AWS Step Functions   |
-| **Monitoring**          | Amazon CloudWatch    |
-| **Security**            | IAM Roles, S3 Bucket Policies |
-| **Development**         | Python, SQL          |
+| Layer | Technology |
+|-------|------------|
+| Storage | Amazon S3 |
+| Processing | AWS Glue, Lambda |
+| Querying | Amazon Athena |
+| Orchestration | Step Functions |
+| Monitoring | CloudWatch |
+| Security | IAM, KMS |
+| Development | Python 3.8+ |
 
----
-
-## Getting Started
+## Installation
 
 ### Prerequisites
-- AWS Account with appropriate permissions  
-- AWS CLI configured locally  
-- Python 3.8+  
-- Required Python packages (see `requirements.txt`)  
-
-### Future Enhancements
-- 🚀 Add data quality validation framework
-- 🚀 Implement data lineage tracking
-- 🚀 Add machine learning capabilities with SageMaker
-- 🚀 Enable real-time data ingestion with Kinesis
-- 🚀 Implement column-level access controls
+```bash
+python -m pip install -r requirements.txt
+```
