@@ -28,7 +28,7 @@ A Python-based utility to load CSV files into a MySQL or PostgreSQL database. In
        name VARCHAR(255),
        email VARCHAR(255)
    );
-   ```
+   ```   
 
 4. Test with the sample CSV file in `data/sample.csv`.
 
