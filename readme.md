@@ -35,7 +35,7 @@ A comprehensive AWS-based Data Lake solution that handles data ingestion, transf
        name VARCHAR(255),
        email VARCHAR(255)
    );
-   ```
+   ```   
 
 4. Test with the sample CSV file in `data/sample.csv`.
 
