@@ -1,12 +1,19 @@
-# CSV to Database Loader
+ Data Lake Project
 
 ## Project Description
-A Python-based utility to load CSV files into a MySQL or PostgreSQL database. Includes error handling and logging for robust operations.
+A comprehensive AWS-based Data Lake solution that handles data ingestion, transformation, and cataloging. Features robust error handling, data quality checks, and efficient S3 storage management.
 
 ## Tech Stack
-- Python (3.9+)
-- MySQL or PostgreSQL
-- Key Libraries: pandas, pymysql/psycopg2, click (optional)
+- Python 3.8+
+- AWS Services:
+  - S3 (Storage)
+  - Glue (Data Catalog)
+  - Athena (Query Engine)
+- Key Libraries: 
+  - boto3
+  - pandas
+  - awswrangler
+
 
 ## Setup Instructions
 1. Clone the repository:
